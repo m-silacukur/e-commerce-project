@@ -1,11 +1,13 @@
-function App() {
+import Header from "./layout/Header.jsx";
+import Footer from "./layout/Footer.jsx";
+import PageContent from "./layout/PageContent.jsx";
+
+export default function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gray-100">
-      <h1 className="text-4xl font-bold text-pink-600">
-        Okey Honey!
-      </h1>
+    <div className="min-h-screen bg-white flex flex-col">
+      <Header />
+      <PageContent />
+      <Footer />
     </div>
   );
 }
-
-export default App;
